@@ -95,8 +95,8 @@ def main():
     time.sleep(3)
     now = datetime.datetime.now()
     # Send some more text
-    lcd_string(now.year,now.month,now.day ,LCD_LINE_1)
-    lcd_string(now.hour,now.minute,now.second ,LCD_LINE_2)
+    lcd_string(str(now.year) +","+ str(now.month) +","+ str(now.day) ,LCD_LINE_1)
+    lcd_string(str(now.hour) +":"+ str(now.minute) +":"+ str(now.second) ,LCD_LINE_2)
 
     time.sleep(3)
 
